@@ -18,7 +18,7 @@ Developed by Jonathan Gonzalez, EA1HET, on September 2017
 import os
 from threading import Lock
 from flask import Flask, session, request, render_template
-from flask_socketio import SocketIO, emit, join_room, leave_room, close_room, rooms, disconnect
+from flask_socketio import SocketIO, emit, disconnect
 import config
 
 # Eventlet suppport for gUnicorn has been added via PIP. This can also be None to autoselect
