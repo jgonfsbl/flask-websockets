@@ -43,8 +43,6 @@ def background_thread():
     while True:
         socketio.sleep(10)
         count += 1
-        socketio.emit('ws_response',
-                      {'data': 'Server event', 'count': count}, namespace='/spot')
 
 
 @app.route('/', methods=['GET'])
